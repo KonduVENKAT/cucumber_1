@@ -16,42 +16,12 @@
 #""
 ## (Comments)
 #Sample Feature Definition Template
-#@tag
-#Feature: Title of your feature
-#  I want to use this template for my feature file
-#
-# @tag1
-#  Scenario: Title of your scenario
-#	  Given I want to write a step with precondition
-#   And some other precondition
-#   When I complete action
-#		And some other action
-#		And yet another action
-#		Then I validate the outcomes
-#		And check more outcomes
-#
-#   @tag2
-#		Scenario Outline: Title of your scenario outline
-#	  Given I want to write a step with <name>
-#		When I check for the <value> in step
-#		Then I verify the <status> in step
-#
-#   Examples: 
-#    | name  | value | status  |
-##   | name1 |     5 | success |
-# | name2 |     7 | Fail    |
-#----------------------------------------------------------------------------------
-#----------------------------------------------------------------------------------
-#----------------------------------------------------------------------------------
 
-Feature: Google Search Feature
+Feature: Google Search
 
-Scenario: google text query box  is taking the input text
+Scenario: google homeSearchPage Test
 
-Given: I have a search Box in the google page
-When: when Title of the google page is google
-Then: then user enters on the search box  Facebook.com
-Then: client click on search button
-And: user get the all posible links for facebook log in pages  
-
-
+Given I have to search for "Facebook.com"
+When  I have to pass  "Facebook.com" in google text box
+Then I have to click on SearchButton
+Then Display some Links with "Facebook.com" Should be displayed

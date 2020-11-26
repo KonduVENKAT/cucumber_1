@@ -1,5 +1,5 @@
 #Author: your.email@your.domain.com
-#Keywords Summary :Test the first Cucumber Feature file 
+#Keywords Summary :
 #Feature: List of scenarios.
 #Scenario: Business rule through list of steps with arguments.
 #Given: Some precondition step
@@ -17,10 +17,11 @@
 ## (Comments)
 #Sample Feature Definition Template
 
+Feature: Google Search
 
-Feature: Amezon Search
+Scenario: google homeSearchPage Test
 
-Scenario: Search A Product
- Given I have  a search feild  on Amezon page
- When I search for a product  with name "Apple MacBook" and price 1000
- Then Prodect with name "Apple MacBook" should be displayed
+Given I have to search for "Facebook.com"
+When  I have to pass  "Facebook.com" in google text box
+Then I have to click on SearchButton
+Then Display some Links with "Facebook.com" Should be displayed
